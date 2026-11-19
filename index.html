@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assam University, Silchar | A Central University Established by an Act of Parliament</title>
+  <meta name="description" content="Assam University, Silchar - A Central University Established by an Act of Parliament 1989. Official website & unified portal redesign.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Core Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP UTILITY BAR
+       ======================================================================== -->
+  <div class="top-utility-bar" role="region" aria-label="Quick Links & Accessibility">
+    <div class="container utility-inner">
+      <ul class="utility-links">
+        <li><a href="#portals"><i data-lucide="mail" class="icon-sm"></i> Webmail</a></li>
+        <li><a href="#discover"><i data-lucide="map-pin" class="icon-sm"></i> Diphu Campus</a></li>
+        <li><a href="#announcements"><i data-lucide="award" class="icon-sm"></i> Awards</a></li>
+        <li><a href="#announcements"><i data-lucide="newspaper" class="icon-sm"></i> Newsletter</a></li>
+        <li><a href="#announcements"><i data-lucide="briefcase" class="icon-sm"></i> Recruitment</a></li>
+        <li class="utility-divider"></li>
+        <li><a href="#discover"><i data-lucide="bar-chart-2" class="icon-sm"></i> NIRF / IQAC</a></li>
+      </ul>
+
+      <div class="utility-actions">
+        <!-- Font Adjuster -->
+        <div class="font-adjuster" title="Adjust Font Size">
+          <button type="button" class="font-btn" data-size="14" aria-label="Decrease Font Size">A-</button>
+          <button type="button" class="font-btn active" data-size="16" aria-label="Reset Font Size">A</button>
+          <button type="button" class="font-btn" data-size="18" aria-label="Increase Font Size">A+</button>
+        </div>
+
+        <!-- Trilingual Switcher -->
+        <div class="lang-selector" title="Switch Interface Language">
+          <button type="button" class="lang-btn active" data-lang="en">English</button>
+          <button type="button" class="lang-btn" data-lang="hi">हिन्दी</button>
+          <button type="button" class="lang-btn" data-lang="as">অসমীয়া</button>
+        </div>
+
+        <!-- HTTPS Trust Badge -->
+        <div class="trust-badge" id="httpsTrustBadge" title="Click for Security Certificate">
+          <i data-lucide="shield-check" class="icon-sm"></i>
+          <span>HTTPS Secured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN NAVIGATION HEADER BAR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="main-header-tier">
+      <div class="container branding-row">
+        <!-- Official Logo & Title -->
+        <a href="index.html" class="brand-anchor" aria-label="Assam University Homepage">
+          <div class="brand-logo-frame">
+            <img src="assets/logo.webp" alt="Assam University Silchar Seal" class="brand-logo-img">
+          </div>
+          <div class="brand-text-block">
+            <span class="brand-name-en">Assam University</span>
+            <span class="brand-subtext">A Central University Established by an Act of Parliament 1989 &bull; Silchar</span>
+          </div>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <ul class="header-nav-list" role="navigation">
+          <li class="header-nav-item">
+            <a href="#discover" class="header-nav-link">About Us <i data-lucide="chevron-down" class="icon-sm"></i></a>
+          </li>
+
+          <li class="header-nav-item">
+            <a href="#programs" class="header-nav-link">Academics <i data-lucide="chevron-down" class="icon-sm"></i></a>
+          </li>
+
+          <li class="header-nav-item">
+            <a href="#programs" class="header-nav-link">Admissions</a>
+          </li>
+
+          <li class="header-nav-item">
+            <a href="#announcements" class="header-nav-link">Examinations</a>
+          </li>
+
+          <!-- Centres & Cells (Structured into 4 scannable columns with live search) -->
+          <li class="header-nav-item has-mega" id="nav-centres">
+            <a href="#centres-cells" class="header-nav-link">Centres &amp; Cells <i data-lucide="chevron-down" class="icon-sm"></i></a>
+            <div class="mega-menu">
+              <div class="mega-filter-bar">
+                <div class="mega-search-wrapper">
+                  <i data-lucide="search" class="icon-sm"></i>
+                  <input type="text" id="megaCentresSearch" class="mega-search-input" placeholder="Quick filter 21 centres & cells...">
+                </div>
+                <span class="mega-stats-badge" id="megaCentresCount">21 Centres &amp; Cells Active</span>
+              </div>
+              <div class="mega-grid-4">
+                <div>
+                  <div class="mega-col-title"><i data-lucide="microscope" class="icon-sm"></i> Research & Computing</div>
+                  <ul class="mega-links-list">
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> Bioinformatics Centre</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> Computer Centre</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> ICT Data Centre</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> R&amp;D Cell</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> IKS Centre</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="mega-col-title"><i data-lucide="heart-handshake" class="icon-sm"></i> Inclusion & Welfare</div>
+                  <ul class="mega-links-list">
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> SC/ST Welfare Cell</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> SEDG Welfare Cell</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> Grievance Redressal (SGRC)</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> Health Care Centre &amp; OPD</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="mega-col-title"><i data-lucide="trending-up" class="icon-sm"></i> Skill & Career</div>
+                  <ul class="mega-links-list">
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> Placement Cell (CCPC)</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> University Skill Hubs</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> MMTTC Faculty Centre</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> CSHD Human Development</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="mega-col-title"><i data-lucide="shield" class="icon-sm"></i> Governance & Youth</div>
+                  <ul class="mega-links-list">
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> Rajbhasha (Hindi) Cell</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> University Sports Board</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> NSS Cell &amp; NCC Unit</a></li>
+                    <li class="mega-centre-item"><a href="#centres-cells"><i data-lucide="check" class="icon-sm"></i> Armed Forces Museum</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="header-nav-item">
+            <a href="#schools" class="header-nav-link">Schools</a>
+          </li>
+        </ul>
+
+        <!-- Right: Global Search & Portal CTA -->
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="search-widget" role="search">
+            <select id="searchCategorySelect" class="search-category-select" aria-label="Search Filter">
+              <option value="All">All</option>
+              <option value="Admissions">Admissions</option>
+              <option value="Examinations">Examinations</option>
+              <option value="Notices">Notices</option>
+              <option value="Centres & Cells">Centres</option>
+            </select>
+            <input type="text" id="globalSearchInput" class="search-input-field" placeholder="Search portal..." autocomplete="off">
+            <button type="button" class="search-btn" aria-label="Search">
+              <i data-lucide="search" class="icon-sm"></i>
+            </button>
+            <div id="searchLiveResults" class="search-live-results" role="listbox"></div>
+          </div>
+
+          <a href="#portals" class="btn btn-primary btn-sm">
+            Unified Portals
+          </a>
+
+          <!-- Mobile Toggle Hamburger -->
+          <button type="button" id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open Mobile Menu">
+            <i data-lucide="menu" class="icon-md"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION (Matching the Uploaded Layout)
+       Full-width background image + "Conviction. Confidence. Creativity."
+       ======================================================================== -->
+  <main>
+    <section class="cinematic-hero-section" aria-label="Assam University Conviction Confidence Creativity">
+      <div class="container">
+        <div class="hero-content-box">
+          <!-- Small Eyebrow Tag -->
+          <div class="hero-pill-badge">
+            A CENTRAL UNIVERSITY ESTABLISHED BY AN ACT OF PARLIAMENT 1989
+          </div>
+
+          <!-- Iconic 3-Line Headline from Screenshot -->
+          <h1 class="hero-stacked-title">
+            <span>Conviction.</span>
+            <span>Confidence.</span>
+            <span>Creativity.</span>
+          </h1>
+
+          <!-- Two Buttons from Screenshot -->
+          <div class="hero-action-buttons">
+            <a href="#programs" class="btn btn-white">
+              Explore Admissions
+            </a>
+            <a href="#portals" class="btn btn-outline-white">
+              Online Services
+            </a>
+          </div>
+
+          <!-- Bottom Quick Links Strip -->
+          <div class="hero-quicklinks-strip">
+            <span>Quick Links:</span>
+            <a href="#announcements" id="heroQuickConvocation">23rd Convocation Portal</a>
+            <span>&bull;</span>
+            <a href="#announcements">Academic Calendar</a>
+            <span>&bull;</span>
+            <a href="#portals">Rabindra Library</a>
+            <span>&bull;</span>
+            <a href="#discover">NIRF 2026</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4 OVERLAPPING QUICK ACCESS CARDS ROW (Matching Screenshot)
+         ======================================================================== -->
+    <div class="container quick-cards-wrapper">
+      <div class="quick-cards-grid">
+        <!-- Card 1: Admissions -->
+        <div class="quick-access-card">
+          <div class="quick-card-icon-box">
+            <i data-lucide="graduation-cap" class="icon-md"></i>
+          </div>
+          <h3>Admissions</h3>
+          <p>UG, PG, B.Tech &amp; Ph.D. programs now open for academic session 2026-27.</p>
+          <a href="#programs" class="quick-card-link">Apply Now &rarr;</a>
+        </div>
+
+        <!-- Card 2: Examinations -->
+        <div class="quick-access-card">
+          <div class="quick-card-icon-box">
+            <i data-lucide="file-text" class="icon-md"></i>
+          </div>
+          <h3>Examinations</h3>
+          <p>CBCS &amp; NEP 2020 semester schedules, admit cards, and regulations.</p>
+          <a href="#portals" class="quick-card-link">Exam Portal &rarr;</a>
+        </div>
+
+        <!-- Card 3: Results -->
+        <div class="quick-access-card">
+          <div class="quick-card-icon-box">
+            <i data-lucide="award" class="icon-md"></i>
+          </div>
+          <h3>Results</h3>
+          <p>Direct online result checker for UG, PG, and Professional courses.</p>
+          <a href="#portals" class="quick-card-link" id="quickLinkCheckResult">Check Status &rarr;</a>
+        </div>
+
+        <!-- Card 4: Archive -->
+        <div class="quick-access-card">
+          <div class="quick-card-icon-box">
+            <i data-lucide="archive" class="icon-md"></i>
+          </div>
+          <h3>Archive</h3>
+          <p>Central notification repository, circulars, tenders &amp; recruitment.</p>
+          <a href="#announcements" class="quick-card-link">View Archive &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         LATEST ANNOUNCEMENTS SECTION (Matching Screenshot Full-Width List)
+         ======================================================================== -->
+    <section class="section" id="announcements" style="padding-top: 0;" aria-label="Latest University Announcements">
+      <div class="container">
+        <div class="announcements-strip-header">
+          <div>
+            <h2 class="section-title" style="margin-bottom: 2px;">Latest Announcements</h2>
+            <p style="font-size: 0.84375rem; color: var(--color-muted-slate);">Official notifications, examination schedules, and academic circulars.</p>
+          </div>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="alert('Viewing comprehensive notice archive (1994-2026).')">
+            View All Notices &rarr;
+          </button>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" data-category="all" role="tab">All Notices</button>
+          <button class="tab-btn" data-category="admissions" role="tab">Admissions</button>
+          <button class="tab-btn" data-category="examinations" role="tab">Examinations</button>
+          <button class="tab-btn" data-category="academic" role="tab">Academic</button>
+          <button class="tab-btn" data-category="events" role="tab">Events &amp; Tenders</button>
+        </div>
+
+        <!-- Clean Full-Width Rows List -->
+        <div class="notice-list-container">
+          <!-- Notice 1 -->
+          <article class="notice-row-item" data-category="examinations" data-notice-id="notice-1">
+            <div class="notice-row-left">
+              <div class="notice-date-box">
+                <span class="notice-date-day">24</span>
+                <span class="notice-date-month">FEB</span>
+              </div>
+              <div class="notice-details-block">
+                <span class="notice-row-badge">Examinations</span>
+                <div class="notice-row-title">Notification regarding Re-Evaluation for UG/PG CBCS Even Semester Examination 2026</div>
+                <div style="font-size:0.75rem; color:#64748B;">Ref: AUS/EXAM/REVAL/2026/041 &bull; Portal open for scrutiny applications</div>
+              </div>
+            </div>
+            <div class="notice-row-action">
+              <button class="btn btn-secondary btn-sm">View PDF &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Notice 2: Convocation Highlights (Gold Badge) -->
+          <article class="notice-row-item" data-category="examinations" data-notice-id="notice-1">
+            <div class="notice-row-left">
+              <div class="notice-date-box">
+                <span class="notice-date-day">18</span>
+                <span class="notice-date-month">FEB</span>
+              </div>
+              <div class="notice-details-block">
+                <span class="notice-row-badge notice-row-badge-gold">
+                  <i data-lucide="award" class="icon-sm"></i> Convocation &amp; Awards
+                </span>
+                <div class="notice-row-title">23rd Convocation Highlights &amp; Degree Certificate Dispatch Notice</div>
+                <div style="font-size:0.75rem; color:#64748B;">Ref: AUS/CONV-23/NOTIF/2026/048 &bull; In-person and speed post guidelines</div>
+              </div>
+            </div>
+            <div class="notice-row-action">
+              <button class="btn btn-secondary btn-sm">View PDF &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Notice 3: Academic Calendar / NEP -->
+          <article class="notice-row-item" data-category="academic" data-notice-id="notice-2">
+            <div class="notice-row-left">
+              <div class="notice-date-box">
+                <span class="notice-date-day">12</span>
+                <span class="notice-date-month">FEB</span>
+              </div>
+              <div class="notice-details-block">
+                <span class="notice-row-badge">Academic</span>
+                <div class="notice-row-title">Academic Calendar for Autumn Semester 2026 (UG, PG, Professional)</div>
+                <div style="font-size:0.75rem; color:#64748B;">Ref: AUS/ACAD/CAL-AUT/2026/02 &bull; Approved by Academic Council</div>
+              </div>
+            </div>
+            <div class="notice-row-action">
+              <button class="btn btn-secondary btn-sm">View PDF &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Notice 4: Indian Knowledge Systems -->
+          <article class="notice-row-item" data-category="admissions" data-notice-id="notice-3">
+            <div class="notice-row-left">
+              <div class="notice-date-box">
+                <span class="notice-date-day">08</span>
+                <span class="notice-date-month">FEB</span>
+              </div>
+              <div class="notice-details-block">
+                <span class="notice-row-badge">Admissions</span>
+                <div class="notice-row-title">Course on Indian Knowledge Systems (IKS): Registration Open</div>
+                <div style="font-size:0.75rem; color:#64748B;">Ref: IKS/AUS/ADM/2026/03 &bull; Multidisciplinary open credit course</div>
+              </div>
+            </div>
+            <div class="notice-row-action">
+              <button class="btn btn-secondary btn-sm">View PDF &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Notice 5: Son Beel Utsav -->
+          <article class="notice-row-item" data-category="events" data-notice-id="notice-4">
+            <div class="notice-row-left">
+              <div class="notice-date-box">
+                <span class="notice-date-day">03</span>
+                <span class="notice-date-month">FEB</span>
+              </div>
+              <div class="notice-details-block">
+                <span class="notice-row-badge">Events</span>
+                <div class="notice-row-title">Son Beel Utsav 2.0 Eco-Cultural National Symposium &amp; Exhibition</div>
+                <div style="font-size:0.75rem; color:#64748B;">Ref: CSHD/SBU/2026/09 &bull; Wetland biodiversity &amp; sustainable ecology</div>
+              </div>
+            </div>
+            <div class="notice-row-action">
+              <button class="btn btn-secondary btn-sm">View PDF &rarr;</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         "DISCOVER ASSAM UNIVERSITY" (About Section Matching Screenshot)
+         ======================================================================== -->
+    <section class="section section-tint" id="discover" aria-label="Discover Assam University">
+      <div class="container">
+        <div class="discover-layout-grid">
+          <!-- Left: Framed Ceremonial / Leadership Photograph -->
+          <div class="discover-image-card">
+            <div class="discover-image-container">
+              <img 
+                src="assets/president-vc.jpg" 
+                alt="Hon'ble President of India Droupadi Murmu with Vice Chancellor Prof. Rajive Mohan Pant" 
+                class="discover-img"
+              >
+            </div>
+            <div class="discover-caption">
+              <span><strong>Leadership &amp; National Vision</strong></span>
+              <span>Rashtrapati Bhavan Presentation</span>
+            </div>
+          </div>
+
+          <!-- Right: Narrative & 3 Feature Checkpoints -->
+          <div>
+            <div class="section-eyebrow section-eyebrow-navy">
+              ABOUT THE UNIVERSITY
+            </div>
+            <h2 class="section-title">Discover Assam University</h2>
+            <p>
+              Assam University came into existence in 1994 through the enforcement of the <em>Assam (Central) University Act 1989</em>. Nestled among the scenic, sprawling green hillocks of Dargakona (600 acres) near Silchar, and complemented by the picturesque Diphu Campus (90 acres) in Karbi Anglong, the University serves as an academic beacon for Northeast India.
+            </p>
+
+            <div class="discover-features-list">
+              <div class="discover-feature-item">
+                <div class="feature-check-icon">
+                  <i data-lucide="check" class="icon-sm"></i>
+                </div>
+                <div class="feature-item-text">
+                  <h4>16 Schools &amp; 42 Departments</h4>
+                  <p>Comprehensive multidisciplinary learning across science, technology, management, arts, and humanities.</p>
+                </div>
+              </div>
+
+              <div class="discover-feature-item">
+                <div class="feature-check-icon">
+                  <i data-lucide="check" class="icon-sm"></i>
+                </div>
+                <div class="feature-item-text">
+                  <h4>690+ Acres Green Campus</h4>
+                  <p>Pristine biodiversity campuses in Silchar (Dargakona) and Karbi Anglong (Diphu) fostering sustainable education.</p>
+                </div>
+              </div>
+
+              <div class="discover-feature-item">
+                <div class="feature-check-icon">
+                  <i data-lucide="check" class="icon-sm"></i>
+                </div>
+                <div class="feature-item-text">
+                  <h4>NAAC 'A' Grade Institution</h4>
+                  <p>Central University recognized for research publications, state-of-the-art laboratories, and regional development.</p>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" id="btnReadVcMessage" class="btn btn-primary">
+              Read Full University History
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         "EXPLORE ACADEMIC PROGRAMS" (Matching 4 Cards in Screenshot)
+         ======================================================================== -->
+    <section class="section" id="programs" aria-label="Explore Academic Programs">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Explore Academic Programs</h2>
+          <p class="section-subtitle mx-auto">Choose from our wide spectrum of undergraduate, postgraduate, and doctoral degree programs.</p>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Card 1: Undergraduate -->
+          <div class="program-card">
+            <h3>Undergraduate</h3>
+            <p>Four-year multidisciplinary UG &amp; FYIPG degree programs in Engineering (B.Tech), Science, Arts, and Commerce.</p>
+            <a href="#portals" class="program-card-link">Explore UG Programs &rarr;</a>
+          </div>
+
+          <!-- Card 2: Postgraduate -->
+          <div class="program-card">
+            <h3>Postgraduate</h3>
+            <p>Specialized Master's degrees including M.Tech, M.Sc, MBA (AICTE approved), LL.M, and M.A. across 42 departments.</p>
+            <a href="#portals" class="program-card-link">Explore PG Programs &rarr;</a>
+          </div>
+
+          <!-- Card 3: Doctoral (Ph.D.) -->
+          <div class="program-card">
+            <h3>Doctoral (Ph.D.)</h3>
+            <p>High-impact doctoral research through University RET and UGC-NET/JRF fellowships in frontier sciences and regional studies.</p>
+            <a href="#portals" class="program-card-link">Research Ph.D. &rarr;</a>
+          </div>
+
+          <!-- Card 4: Diploma / Cert. -->
+          <div class="program-card">
+            <h3>Diploma / Cert.</h3>
+            <p>Industry-oriented PG diplomas in Data Science, Indian Knowledge Systems (IKS), French, and Tea Technology.</p>
+            <a href="#portals" class="program-card-link">Certificate Courses &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         "SCHOOLS & DEPARTMENTS" QUICK GRID (Matching Screenshot)
+         ======================================================================== -->
+    <section class="section section-tint" id="schools" aria-label="Schools & Departments">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Schools &amp; Departments</h2>
+          <p class="section-subtitle">The academic departments that redefine learning and research.</p>
+        </div>
+
+        <div class="schools-quick-grid">
+          <div class="school-item-box">
+            <h4>Triguna Sen School of Technology</h4>
+            <p>Computer Science &amp; Engg, Electronics &amp; Comm, Agricultural Engg.</p>
+          </div>
+
+          <div class="school-item-box">
+            <h4>J.N. School of Management Studies</h4>
+            <p>Dept. of Business Administration (MBA), Dept. of Commerce.</p>
+          </div>
+
+          <div class="school-item-box">
+            <h4>School of Physical Sciences</h4>
+            <p>Department of Physics, Department of Chemistry.</p>
+          </div>
+
+          <div class="school-item-box">
+            <h4>School of Life Sciences</h4>
+            <p>Life Science &amp; Bioinformatics, Department of Microbiology.</p>
+          </div>
+
+          <div class="school-item-box">
+            <h4>School of Social Sciences</h4>
+            <p>History, Political Science, Sociology, Department of Social Work.</p>
+          </div>
+
+          <div class="school-cta-box" onclick="alert('Viewing comprehensive list of all 16 Academic Schools and 42+ Departments.')">
+            <span style="font-weight: 700; color: var(--color-primary-navy); font-size: 0.875rem;">
+              View All 16 Schools &amp; 42+ Depts &rarr;
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         "UNIVERSITY PORTALS" (Dark Navy Band Section Matching Screenshot)
+         ======================================================================== -->
+    <section class="portals-navy-section" id="portals" aria-label="University Portals">
+      <div class="container">
+        <div class="portals-navy-header">
+          <h2 class="portals-navy-title">University Portals</h2>
+          <p class="portals-navy-sub">Single sign-on unified access for students, faculty, and administrators.</p>
+        </div>
+
+        <!-- 4 Navy Elevated Cards -->
+        <div class="portals-cards-grid">
+          <!-- Card 1: AUS Samarth -->
+          <div class="portal-navy-card">
+            <div class="portal-navy-icon">
+              <i data-lucide="layers" class="icon-md"></i>
+            </div>
+            <h4>AUS Samarth</h4>
+            <p>Unified e-Governance portal for admissions, fee collection, and student lifecycle management.</p>
+            <a href="#portals" class="portal-navy-link" onclick="openRoleLogin('student')">Open Samarth &rarr;</a>
+          </div>
+
+          <!-- Card 2: Webmail Access -->
+          <div class="portal-navy-card">
+            <div class="portal-navy-icon">
+              <i data-lucide="mail" class="icon-md"></i>
+            </div>
+            <h4>Webmail Access</h4>
+            <p>Official NIC-secured email communication for faculty, researchers, and officers.</p>
+            <a href="#portals" class="portal-navy-link" onclick="openRoleLogin('department')">Access Webmail &rarr;</a>
+          </div>
+
+          <!-- Card 3: Examination Portal -->
+          <div class="portal-navy-card">
+            <div class="portal-navy-icon">
+              <i data-lucide="file-check-2" class="icon-md"></i>
+            </div>
+            <h4>Examination Portal</h4>
+            <p>Semester admit cards, tabulation marksheets, re-evaluation, and convocation degrees.</p>
+            <a href="#portals" class="portal-navy-link" id="btnTriggerResultChecker">Check Results &rarr;</a>
+          </div>
+
+          <!-- Card 4: Central E-Library -->
+          <div class="portal-navy-card">
+            <div class="portal-navy-icon">
+              <i data-lucide="library" class="icon-md"></i>
+            </div>
+            <h4>Central E-Library</h4>
+            <p>Rabindra Library OPAC search, DELCON, Shodhganga, and 10,000+ subscribed e-journals.</p>
+            <a href="#portals" class="portal-navy-link" onclick="alert('Opening Rabindra Library Web OPAC Catalog...')">Search OPAC &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Role-Based Login Bar (Simulated SSO) -->
+        <div style="margin-top: 36px; padding: 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 2px;">Unified Role-Based SSO Login</h4>
+            <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.8125rem; margin: 0;">Switch between Student, Department, College, Centre, or Admin portal access.</p>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="btn btn-outline-white btn-sm" onclick="openRoleLogin('student')">Student Portal</button>
+            <button class="btn btn-outline-white btn-sm" onclick="openRoleLogin('department')">Department</button>
+            <button class="btn btn-outline-white btn-sm" onclick="openRoleLogin('college')">Affiliated College</button>
+            <button class="btn btn-outline-white btn-sm" onclick="openRoleLogin('center')">Centres &amp; Cells</button>
+            <button class="btn btn-outline-white btn-sm" onclick="openRoleLogin('admin')">Admin SSO</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         "LIFE AT ASSAM UNIVERSITY" (Matching 4 Bento Cards in Screenshot)
+         ======================================================================== -->
+    <section class="section" id="life" aria-label="Life at Assam University">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Life at Assam University</h2>
+          <p class="section-subtitle">Vibrant campus culture, national convocation, and biodiverse nature.</p>
+        </div>
+
+        <div class="life-bento-grid">
+          <!-- Bento 1: Campus Culture & Entrance Gate -->
+          <div class="life-bento-card gallery-card" data-caption="Assam University Main Entrance Gate &amp; Graduating Scholars" data-img="assets/campus-gate.jpg">
+            <img 
+              src="assets/campus-gate.jpg" 
+              alt="Assam University Main Entrance Gate and Scholars" 
+              class="life-bento-img"
+            >
+            <div class="life-bento-overlay">
+              <div class="life-bento-title">Campus Culture</div>
+              <div class="life-bento-sub">Dargakona Main Entrance Gate</div>
+            </div>
+          </div>
+
+          <!-- Bento 2: 23rd Convocation Cultural Celebration -->
+          <div class="life-bento-card gallery-card" data-caption="23rd Annual Convocation Cultural Celebration" data-img="assets/convocation-stage.jpg">
+            <img 
+              src="assets/convocation-stage.jpg" 
+              alt="23rd Annual Convocation Cultural Celebration" 
+              class="life-bento-img"
+            >
+            <div class="life-bento-overlay">
+              <div class="life-bento-title">23rd Annual Convocation</div>
+              <div class="life-bento-sub">Netaji Subhash Mancha</div>
+            </div>
+          </div>
+
+          <!-- Bento 3: 33rd Foundation Day Celebration -->
+          <div class="life-bento-card gallery-card" data-caption="33rd Foundation Day Celebration - Thirty-Three Glorious Years" data-img="assets/foundation-day.jpg">
+            <img 
+              src="assets/foundation-day.jpg" 
+              alt="Assam University 33rd Foundation Day Celebration" 
+              class="life-bento-img"
+            >
+            <div class="life-bento-overlay">
+              <div class="life-bento-title">33rd Foundation Day</div>
+              <div class="life-bento-sub">Thirty-Three Glorious Years</div>
+            </div>
+          </div>
+
+          <!-- Bento 4: Deep Navy Full Gallery Card -->
+          <div class="life-bento-card life-bento-navy-card" id="btnOpenFullGallery">
+            <i data-lucide="image" class="icon-lg" style="margin-bottom: 12px; color: #38BDF8;"></i>
+            <h4>Full Gallery</h4>
+            <p>View all official photos and captured moments across both campuses.</p>
+            <button type="button" class="btn btn-outline-white btn-sm">
+              View All &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       INSTITUTIONAL FOOTER (Matching Screenshot)
+       ======================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Identity & Postal Address -->
+        <div>
+          <div class="footer-identity-block">
+            <div class="footer-logo-frame">
+              <img src="assets/logo.webp" alt="Assam University Emblem" class="footer-logo-img">
+            </div>
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: #FFFFFF;">
+                Assam University
+              </div>
+              <div style="font-size: 0.75rem; color: #94A3B8;">A Central University Established by an Act of Parliament 1989</div>
+            </div>
+          </div>
+          <p class="footer-address-text">
+            <strong>Main Campus:</strong> P.O. Dargakona, Silchar - 788011, Cachar, Assam, India<br>
+            <strong>Diphu Campus:</strong> Diphu, Karbi Anglong - 782462, Assam, India<br>
+            <strong>Telephone:</strong> +91-3842-270806 &bull; <strong>Email:</strong> registrar@aus.ac.in
+          </p>
+          <div class="footer-social-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i data-lucide="facebook" class="icon-sm"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter"><i data-lucide="twitter" class="icon-sm"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i data-lucide="youtube" class="icon-sm"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i data-lucide="instagram" class="icon-sm"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Academics -->
+        <div>
+          <h4 class="footer-col-title">Academics</h4>
+          <ul class="footer-links-list">
+            <li><a href="#schools">16 Academic Schools</a></li>
+            <li><a href="#programs">Undergraduate Programs</a></li>
+            <li><a href="#programs">Postgraduate Programs</a></li>
+            <li><a href="#programs">Ph.D. Research Admissions</a></li>
+            <li><a href="#announcements">Academic Calendar</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#portals">Central E-Library (OPAC)</a></li>
+            <li><a href="#discover">NIRF &amp; IQAC Reports</a></li>
+            <li><a href="#announcements">23rd Convocation Portal</a></li>
+            <li><a href="#portals">AUS Samarth Portal</a></li>
+            <li><a href="#discover">Diphu Campus Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Statutory & Compliance -->
+        <div>
+          <h4 class="footer-col-title">Statutory &amp; Cells</h4>
+          <ul class="footer-links-list">
+            <li><a href="#nav-centres">RTI Cell Disclosures</a></li>
+            <li><a href="#nav-centres">Anti-Ragging Undertaking</a></li>
+            <li><a href="#nav-centres">Equal Opportunity Cell</a></li>
+            <li><a href="#nav-centres">Internal Complaints (ICC)</a></li>
+            <li><a href="#nav-centres">SC/ST &amp; SEDG Welfare</a></li>
+          </ul>
+          <div style="margin-top: 14px; font-size: 0.75rem; color: #94A3B8;">
+            <i data-lucide="shield-check" class="icon-sm" style="color:#38BDF8;"></i> GIGW 3.0 &amp; ISO 27001 Certified
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Sub-Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Assam University, Silchar. All Rights Reserved. Maintained by ICT Data Centre.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#footer">Privacy Policy</a>
+          <a href="#footer">Terms of Use</a>
+          <a href="#footer">Accessibility</a>
+          <a href="#footer">Hyperlink Policy</a>
+          <a href="#footer">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL SYSTEM (Notice Preview, Results Marksheet, VC Message, Login)
+       ======================================================================== -->
+  <div id="genericModalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="genericModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="genericModalTitle" style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0;">Notice Details</h3>
+        <button type="button" id="genericModalClose" class="modal-close-btn" aria-label="Close Modal">
+          <i data-lucide="x" class="icon"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="genericModalContent">
+        <!-- Dynamically injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MOBILE NAVIGATION DRAWER
+       ======================================================================== -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer" role="navigation" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/logo.webp" alt="Assam University Emblem" style="width:32px; height:32px; border-radius:50%; background:#FFF;">
+        <span style="font-weight:700; font-size:0.9375rem;">Assam University</span>
+      </div>
+      <button type="button" id="mobileDrawerClose" style="color:#FFF; padding:4px;">
+        <i data-lucide="x" class="icon"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <a href="index.html" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0; border-bottom:1px solid #E2E8F0;">
+        <i data-lucide="home" class="icon-sm"></i> Home
+      </a>
+      <a href="#discover" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0; border-bottom:1px solid #E2E8F0;" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
+        <i data-lucide="info" class="icon-sm"></i> About Us
+      </a>
+      <a href="#programs" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0; border-bottom:1px solid #E2E8F0;" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
+        <i data-lucide="graduation-cap" class="icon-sm"></i> Academic Programs
+      </a>
+      <a href="#announcements" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0; border-bottom:1px solid #E2E8F0;" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
+        <i data-lucide="bell" class="icon-sm"></i> Announcements &amp; Notices
+      </a>
+      <a href="#schools" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0; border-bottom:1px solid #E2E8F0;" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
+        <i data-lucide="book-open" class="icon-sm"></i> Schools &amp; Departments
+      </a>
+      <a href="#portals" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0; border-bottom:1px solid #E2E8F0;" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
+        <i data-lucide="shield" class="icon-sm"></i> University Portals &amp; Login
+      </a>
+      <a href="#life" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0; border-bottom:1px solid #E2E8F0;" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
+        <i data-lucide="image" class="icon-sm"></i> Life at Assam University
+      </a>
+      <a href="#footer" class="nav-link" style="color:var(--color-primary-navy); padding:8px 0;" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
+        <i data-lucide="phone" class="icon-sm"></i> Contact Us
+      </a>
+    </div>
+  </div>
+
+  <!-- Core JavaScript Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
